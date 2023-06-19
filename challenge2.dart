@@ -28,9 +28,8 @@ void main() {
 
   /// solution
   stdout.write('enter your password : ');
-  String? pass = stdin.readLineSync();
+  String? pass = stdin.readLineSync() ?? '0';
   int leng = pass.length;
-  print(leng);
   String result = leng > 6 ? 'strong' : 'weak';
   print('result : $result');
 }
