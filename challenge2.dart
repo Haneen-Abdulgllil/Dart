@@ -1,5 +1,8 @@
-void main() {
 import 'dart:io';
+
+void main() {
+
+
   /// Q1: print output using single print
   /// hint : `\n` in dart lang
   /// output :  I am Learning Programming with
@@ -25,7 +28,9 @@ import 'dart:io';
 
   /// solution
   stdout.write('enter your password : ');
-  num pass = num.parse(stdin.readLineSync());
-  String result = pass.length > 6 ? 'strong' : 'weak';
+  String? pass = stdin.readLineSync();
+  int leng = pass.length;
+  print(leng);
+  String result = leng > 6 ? 'strong' : 'weak';
   print('result : $result');
 }
